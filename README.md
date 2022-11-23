@@ -20,7 +20,7 @@ qui **dépublie** les événements dont la date de fin est dépassée à l'aide 
 
 
 ## Rendu attendu
-**Vous devez cloner ce repo** et nous envoyer soit un lien vers votre propre repo, soit un package avec :
+**Vous devez cloner ce repo, MERCI DE NE PAS LE FORKER,** et nous envoyer soit un lien vers votre propre repo, soit un package avec :
 
 * votre configuration exportée ;
 * **et/ou** un dump de base de données ;
