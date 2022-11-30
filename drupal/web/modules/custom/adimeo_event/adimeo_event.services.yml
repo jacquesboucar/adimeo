@@ -1,0 +1,4 @@
+services:
+  adimeo_event_service:
+    class: Drupal\adimeo_event\EventService
+    arguments: [ '@entity_type.manager']

@@ -1,0 +1,6 @@
+services:
+  adimeo.commands:
+    class: \Drupal\adimeo_event\Commands\UnpublishEventCommand
+    tags:
+      - { name: drush.command }
+    arguments: ['@adimeo_event_service', '@queue']
