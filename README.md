@@ -23,6 +23,8 @@ Un environnement local avec docker a été mis en place avec une image php 8.1 e
 * s'affichant sur la page de détail d'un événement ;
 * et affichant 3 autres événements du même type (taxonomie) que l'événement courant, ordonnés par date de début (asc), et dont la date de fin n'est pas dépassée ;
 * S'il y a moins de 3 événements du même type, compléter avec un ou plusieurs événements d'autres types, ordonnés par date de début (asc), et dont la date de fin n'est pas dépassée.
+
+
 Pour cet exercice nous avons choisi d'afficher le bloc "Mes evenements liés" en bas de la page de détail d'un evenement.
 Dans le cas ou il y'a moins de 3 événements du même type nous avons aussi choisi d'afficher juste 3 autres événements d'autres types
 
