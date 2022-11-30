@@ -1,0 +1,28 @@
+uuid: 2df0e302-27e3-481b-92d5-2b1abfad80e6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - adimeo_event
+    - node
+  theme:
+    - test_drupal
+id: evenementslies
+theme: test_drupal
+region: sidebar_first
+weight: 0
+provider: null
+plugin: block_related_event
+settings:
+  id: block_related_event
+  label: 'Événements liés'
+  label_display: visible
+  provider: adimeo_event
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event
