@@ -47,11 +47,6 @@ class UnpublishOldEvents extends QueueWorkerBase implements ContainerFactoryPlug
     );
   }
 
-  /**
-   * @param $node
-   *
-   * @return void
-   */
   public function processItem($node): void
   {
     try {
@@ -63,7 +58,8 @@ class UnpublishOldEvents extends QueueWorkerBase implements ContainerFactoryPlug
             '@id' => $node->id(),
             '%title' => $node->getTitle(),
           ]);
-    } catch (\Exception $exception) {
+    }
+    catch (\Exception $exception) {
       $this->loggerChannelFactory->get('Warning')
           ->warning('Exception trow for queue @error',
           ['@error' => $exception->getMessage()]
