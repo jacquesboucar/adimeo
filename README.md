@@ -30,6 +30,8 @@ Dans le cas ou il y'a moins de 3 événements du même type nous avons aussi cho
 
 ### 2. Faire une tache cron
 qui **dépublie** les événements dont la date de fin est dépassée à l'aide d'un **QueueWorker**.
+
+
 Il est mieux de lancer ce genre de tâche en background plutot que d'utiliser le cron drupal par exemple qui dépend d'une requête de page
 et donc pourrait avoir des lenteurs.
 Nous avons choisi de creer une commande drush pour ajouter l'ensemble des événements à dépublier dans le queue. Et l'execution du queue
