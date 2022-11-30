@@ -14,7 +14,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
 function adimeo_event_help($route_name, RouteMatchInterface $route_match)
 {
   switch ($route_name) {
-    // Main module help for the owf_auth module.
+    // Main module help for the adimeo_event module.
     case 'help.page.adimeo_event':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
