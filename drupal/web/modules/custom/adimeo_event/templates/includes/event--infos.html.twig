@@ -1,0 +1,5 @@
+<a href="{{ path('entity.node.canonical', {'node': key}) }}" >
+  {{ node.title.value }}</a>
+{{ 'Date de début: '|trans }}{{ node.field_date_start.value|date("d/m/Y") }}
+  {{ 'Date de fin: '|trans }}{{ node.field_date_end.value|date("d/m/Y") }}
+<br>

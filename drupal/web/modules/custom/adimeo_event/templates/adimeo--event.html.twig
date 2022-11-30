@@ -1,0 +1,9 @@
+{% for key, value in relatedEvents %}
+  {% include "@adimeo_event/includes/event--infos.html.twig" with {'node': value, 'key': key  } %}
+{% endfor %}
+{% if otherEvents is not empty %}
+  <p>{{ 'Autres événements' |t }}</p>
+  {% for key, value in otherEvents %}
+    {% include "@adimeo_event/includes/event--infos.html.twig" with {'node': value, 'key': key  } %}
+  {% endfor %}
+{% endif %}
